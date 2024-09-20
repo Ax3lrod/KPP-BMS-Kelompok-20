@@ -51,3 +51,16 @@ body {
   opacity: 1;
   transform: translateY(0px);
 }
+
+.project_bg {
+  background: linear-gradient(
+    180deg,
+    #190019 0%,
+    #2b124c 20.03%,
+    #522b5b 40%,
+    #854f6c 60%,
+    #dfb6b2 80%,
+    #fbe4d8 100%
+  );
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
