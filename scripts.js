@@ -26,19 +26,16 @@ const closeButton = document.getElementById("closeButton");
 const mobileMenu = document.getElementById("mobileMenu");
 const overlay = document.getElementById("overlay");
 
-// Open sidebar
 menuButton.addEventListener("click", () => {
   mobileMenu.classList.remove("translate-x-full");
   overlay.classList.remove("hidden");
 });
 
-// Close sidebar
 closeButton.addEventListener("click", () => {
   mobileMenu.classList.add("translate-x-full");
   overlay.classList.add("hidden");
 });
 
-// Close sidebar when clicking outside
 overlay.addEventListener("click", () => {
   mobileMenu.classList.add("translate-x-full");
   overlay.classList.add("hidden");
