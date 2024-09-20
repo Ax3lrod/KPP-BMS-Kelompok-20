@@ -13,11 +13,11 @@
     <style>
       @font-face {
         font-family: "Vandalust";
-        src: url("/fonts/Vandalust.ttf") format("truetype");
+        src: url("fonts/Vandalust.ttf") format("truetype");
       }
       @font-face {
         font-family: "Gotham-Black";
-        src: url("/fonts/Gotham-Black.otf") format("opentype");
+        src: url("fonts/Gotham-Black.otf") format("opentype");
       }
     </style>
   </head>
@@ -34,7 +34,7 @@
         <!-- Menu button for mobile -->
         <div class="lg:hidden">
           <img
-            src="/images/drop_down_menu.png"
+            src="images/drop_down_menu.png"
             id="menuButton"
             class="w-8 h-8 cursor-pointer"
             alt="Menu"
@@ -92,24 +92,28 @@
       />
 
       <div
-        class="relative z-10 flex flex-col items-center justify-center text-center w-full font-['Gotham-Black'] mb-5 lg:mt-[-50px]"
+        class="relative z-10 flex flex-col items-center justify-center text-center w-full font-['Gotham-Black'] mb-10"
       >
         <!-- Basic -->
         <div
-          class="lg:text-[179px] text-[89.5px] font-medium leading-none lg:mb-[-40px] mb-[-20px]"
+          class="lg:text-[179px] text-[89.5px] font-medium leading-none -mb-2 lg:-mb-8"
         >
           BASIC
         </div>
 
-        <!-- Media image -->
-        <img
-          src="images/Media.png"
-          class="z-10 lg:w-[575px] lg:h-[302px] w-[287.5px] h-[151px]"
-        />
+        <!-- Basic -->
+        <div
+          class="lg:text-[174px] text-[82px] font-medium leading-none text-[#3C098F] lg:-mb-3"
+        >
+          MEDIA
+          <div class="-z-10 translate-x-1 lg:translate-x-2 bottom-[48px] lg:bottom-[80px] absolute text-[#7C0505]">
+            MEDIA
+          </div>
+        </div>
 
         <!-- Schooling -->
         <div
-          class="lg:text-[90px] text-[45px] font-medium leading-none lg:mt-[-40px] mt-[-20px]"
+          class="lg:text-[90px] text-[45px] font-medium leading-none"
         >
           SCHOOLING
         </div>
