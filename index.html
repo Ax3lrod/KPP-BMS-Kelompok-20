@@ -10,19 +10,118 @@
     />
     <link href="styles.css" rel="stylesheet" />
     <title>KPP BMS</title>
+    <style>
+      @font-face {
+        font-family: "Vandalust";
+        src: url("/fonts/Vandalust.ttf") format("ttf");
+      }
+      @font-face {
+        font-family: "Gotham-Black";
+        src: url("/fonts/Gotham-Black.otf") format("opentype");
+      }
+    </style>
   </head>
   <body class="bg-black text-white overflow-x-hidden">
     <!-- Navbar -->
-    <div
-      class="justify-center gap-x-20 font-bold flex fixed bg-black w-screen h-[60px]"
-    >
-      <button class="">Home</button>
-      <button class="">Members</button>
-      <button class="">Projects</button>
+    <div class="fixed top-0 left-0 w-full z-20 bg-black">
+      <div class="flex justify-between items-center h-[90px] px-4 lg:px-10">
+        <div class="font-bold text-lg">Team 20</div>
+        <div class="hidden lg:flex gap-x-20 font-bold">
+          <button>Home</button>
+          <button>Members</button>
+          <button>Projects</button>
+        </div>
+        <!-- Menu button for mobile -->
+        <div class="lg:hidden">
+          <img
+            src="/public/drop_down_menu.png"
+            id="menuButton"
+            class="w-8 h-8 cursor-pointer"
+            alt="Menu"
+          />
+        </div>
+      </div>
     </div>
 
+    <!-- Sidebar (hidden by default) -->
+    <div
+      id="mobileMenu"
+      class="fixed top-0 right-0 w-[70%] h-full bg-black transform translate-x-full transition-transform duration-300 ease-in-out z-30"
+    >
+      <div class="flex flex-col p-5 font-bold">
+        <button class="self-end mb-10" id="closeButton">&times;</button>
+        <a href="#" class="mb-5">Home</a>
+        <a href="#" class="mb-5">Members</a>
+        <a href="#" class="mb-5">Projects</a>
+      </div>
+    </div>
+
+    <!-- Overlay for the sidebar -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden z-20"
+    ></div>
+
     <!-- Hero Section -->
-    <div class="w-screen h-[900px]"></div>
+    <div
+      class="w-screen h-[900px] flex items-center justify-center flex-col relative mb-20"
+    >
+      <img
+        src="public/hero_bg.svg"
+        class="absolute top-0 left-0 w-full h-full object-cover z-0"
+      />
+
+      <img
+        src="public/hyper.png"
+        class="z-10 absolute lg:left-[50px] lg:top-[100px] top-[90px] left-[-50px] w-[223.613px] h-[214.751px]"
+      />
+
+      <img
+        src="public/AkiraMob.png"
+        class="z-10 absolute left-[50px] bottom-0 hidden lg:block"
+      />
+
+      <img
+        src="public/figma_sticker.png"
+        class="z-10 absolute lg:right-[70px] lg:top-[70px] bottom-[100px] right-[20px] lg:w-[204.426px] lg:h-[195.006px] w-[102.213px] h-[97.503px]"
+      />
+
+      <img
+        src="public/YouReapInWhatYouSow.png"
+        class="z-10 absolute right-[70px] bottom-[70px] hidden lg:block"
+      />
+
+      <div
+        class="relative z-10 flex flex-col items-center justify-center text-center w-full font-['Gotham-Black'] mb-5 lg:mt-[-50px]"
+      >
+        <!-- Basic -->
+        <div
+          class="lg:text-[179px] text-[89.5px] font-medium leading-none lg:mb-[-40px] mb-[-20px]"
+        >
+          BASIC
+        </div>
+
+        <!-- Media image -->
+        <img
+          src="public/Media.png"
+          class="z-10 lg:w-[575px] lg:h-[302px] w-[287.5px] h-[151px]"
+        />
+
+        <!-- Schooling -->
+        <div
+          class="lg:text-[90px] text-[45px] font-medium leading-none lg:mt-[-40px] mt-[-20px]"
+        >
+          SCHOOLING
+        </div>
+      </div>
+
+      <!-- Team 20 -->
+      <div
+        class="relative z-10 font-['Vandalust'] lg:text-[128px] text-[64px] font-normal leading-none mt-[-20px]"
+      >
+        Team 20
+      </div>
+    </div>
 
     <!-- Meet The Team -->
     <div
@@ -37,7 +136,7 @@
       "
     >
       <div
-        class="flex lg:text-start lg:w-1/2 lg:text-[128px] text-7xl font-bold lg:leading-[150px] text-center lg:pr-[200px] lg:ml-5 mb-10 lg:mb-0"
+        class="flex lg:text-start lg:w-1/2 lg:text-[128px] lg:text-7xl text-3xl font-bold lg:leading-[150px] text-center lg:pr-[200px] lg:ml-5 mb-10 lg:mb-0"
       >
         Meet The Team
       </div>
