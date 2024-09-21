@@ -40,3 +40,38 @@ overlay.addEventListener("click", () => {
   mobileMenu.classList.add("translate-x-full");
   overlay.classList.add("hidden");
 });
+
+const slideshows = [
+  {
+    elementId: "slideshowImage1",
+    images: [
+      "images/satya_figma.png",
+      "images/satya_webdev.png",
+      "images/satya_copywriting.png",
+      "images/satya_photography.jpg",
+    ],
+  },
+  {
+    elementId: "slideshowImage2",
+    images: [
+      "images/member2_task1.png",
+      "images/member2_task2.png",
+      "images/member2_task3.png",
+      "images/member2_task4.png",
+    ],
+  },
+];
+
+slideshows.forEach((slideshow) => {
+  let currentIndex = 0;
+  const imageElement = document.getElementById(slideshow.elementId);
+
+  imageElement.src = slideshow.images[currentIndex];
+
+  function changeImage() {
+    currentIndex = (currentIndex + 1) % slideshow.images.length;
+    imageElement.src = slideshow.images[currentIndex];
+  }
+
+  setInterval(changeImage, 3000);
+});
