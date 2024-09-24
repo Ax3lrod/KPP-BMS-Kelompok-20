@@ -73,7 +73,7 @@ const slideshows = [
     elementId: "slideshowImage4",
     images: [
       "images/tika_figma.jpg",
-      "images/member2_task2.png",
+      "images/amoes_webdev.png",
       "images/member2_task3.png",
       "images/member2_task4.png",
     ],
@@ -81,9 +81,9 @@ const slideshows = [
   {
     elementId: "slideshowImage5",
     images: [
-      "images/tika_figma.jpg",
-      "images/member2_task2.png",
-      "images/member2_task3.png",
+      "images/amoes_figma.jpg",
+      "images/amoes_webdev.png",
+      "images/amoes_copywriting.png",
       "images/member2_task4.png",
     ],
   },
