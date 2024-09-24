@@ -54,7 +54,34 @@ const slideshows = [
   {
     elementId: "slideshowImage2",
     images: [
-      "images/member2_task1.png",
+      "images/tika_figma.jpg",
+      "images/member2_task2.png",
+      "images/member2_task3.png",
+      "images/member2_task4.png",
+    ],
+  },
+  {
+    elementId: "slideshowImage3",
+    images: [
+      "images/tika_figma.jpg",
+      "images/member2_task2.png",
+      "images/member2_task3.png",
+      "images/member2_task4.png",
+    ],
+  },
+  {
+    elementId: "slideshowImage4",
+    images: [
+      "images/tika_figma.jpg",
+      "images/member2_task2.png",
+      "images/member2_task3.png",
+      "images/member2_task4.png",
+    ],
+  },
+  {
+    elementId: "slideshowImage5",
+    images: [
+      "images/tika_figma.jpg",
       "images/member2_task2.png",
       "images/member2_task3.png",
       "images/member2_task4.png",
