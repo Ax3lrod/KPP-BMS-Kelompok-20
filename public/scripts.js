@@ -63,10 +63,10 @@ const slideshows = [
   {
     elementId: "slideshowImage3",
     images: [
-      "images/tika_figma.jpg",
-      "images/member2_task2.png",
-      "images/member2_task3.png",
-      "images/member2_task4.png",
+      "images/figma_azza.png",
+      "images/web_azza.png",
+      "images/copywriting_azza.png",
+      "images/photography_azza.jpeg",
     ],
   },
   {
