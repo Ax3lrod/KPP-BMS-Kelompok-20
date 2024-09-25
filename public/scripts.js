@@ -63,10 +63,10 @@ const slideshows = [
   {
     elementId: "slideshowImage3",
     images: [
-      "images/tika_figma.jpg",
-      "images/member2_task2.png",
-      "images/member2_task3.png",
-      "images/member2_task4.png",
+      "images/figma_azza.png",
+      "images/web_azza.png",
+      "images/copywriting_azza.png",
+      "images/photography_azza.jpeg",
     ],
   },
   {
@@ -102,3 +102,43 @@ slideshows.forEach((slideshow) => {
 
   setInterval(changeImage, 3000);
 });
+
+// Navbar blur and transparency on scroll
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById('navbar');
+  if (window.scrollY > 50) {
+    navbar.classList.add('backdrop-blur-md', 'bg-opacity-20');
+    navbar.classList.remove('bg-opacity-100');
+  } else {
+    navbar.classList.remove('backdrop-blur-md', 'bg-opacity-70');
+    navbar.classList.add('bg-opacity-100');
+  }
+});
+
+   // Scroll to Hero section when Home button is clicked
+   const homeButton = document.getElementById('homeButton');
+   homeButton.addEventListener('click', function() {
+     document.getElementById('home').scrollIntoView({
+       behavior: 'smooth'
+     });
+   });
+
+  // Scroll to Meet the Team section when Members button is clicked
+  const membersButton = document.getElementById('memberButton');
+  membersButton.addEventListener('click', function() {
+    document.getElementById('meetTheTeam').scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+
+  // Scroll to Our Works section when Projects button is clicked
+  const projectsButton = document.getElementById('projectButton');
+  projectsButton.addEventListener('click', function() {
+    document.getElementById('ourWorks').scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+
+
+
+
