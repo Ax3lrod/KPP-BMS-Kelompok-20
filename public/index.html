@@ -28,9 +28,9 @@
       <div class="flex justify-between items-center h-[90px] px-8 lg:px-10">
         <div class="font-['Vandalust'] font-normal text-2xl text-white">Team 20</div>
         <div class="hidden lg:flex gap-x-20 font-bold text-white">
-          <button class="text-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105 px-3 py-3 rounded-md">Home</button>
-          <button class="text-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105 px-3 py-3 rounded-md">Members</button>
-          <button class="text-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105 px-3 py-3 rounded-md">Projects</button>
+          <button class="text-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105 px-3 py-3 rounded-md" id="homeButton">Home</button>
+          <button class="text-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105 px-3 py-3 rounded-md" id="memberButton">Members</button>
+          <button class="text-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105 px-3 py-3 rounded-md" id="projectButton">Projects</button>
         </div>
         <!-- Menu button for mobile -->
         <div class="lg:hidden">
@@ -66,6 +66,7 @@
     <!-- Hero Section -->
     <div
       class="w-screen h-[900px] flex items-center justify-center flex-col relative mb-20"
+      id="home"
     >
       <img
         src="images/hero_bg.svg"
@@ -135,6 +136,7 @@
           #0b0135 79.83%
         );
       "
+      id="meetTheTeam"
     >
       <div
         class="flex lg:text-start lg:w-1/2 lg:text-[128px] lg:text-7xl text-4xl font-bold lg:leading-[150px] text-center lg:pr-[200px] lg:ml-32 mb-10 lg:mb-0"
@@ -352,6 +354,7 @@
     <!-- Our Works -->
     <div
       class="project_bg w-screen h-fit flex flex-col items-center pt-10 px-10"
+      id="ourWorks"
     >
       <div class="font-bold text-4xl items-start pb-10">Our Works</div>
 

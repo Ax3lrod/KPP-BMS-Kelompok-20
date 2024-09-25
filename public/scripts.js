@@ -115,4 +115,30 @@ window.addEventListener('scroll', function() {
   }
 });
 
+   // Scroll to Hero section when Home button is clicked
+   const homeButton = document.getElementById('homeButton');
+   homeButton.addEventListener('click', function() {
+     document.getElementById('home').scrollIntoView({
+       behavior: 'smooth'
+     });
+   });
+
+  // Scroll to Meet the Team section when Members button is clicked
+  const membersButton = document.getElementById('memberButton');
+  membersButton.addEventListener('click', function() {
+    document.getElementById('meetTheTeam').scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+
+  // Scroll to Our Works section when Projects button is clicked
+  const projectsButton = document.getElementById('projectButton');
+  projectsButton.addEventListener('click', function() {
+    document.getElementById('ourWorks').scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+
+
+
 
