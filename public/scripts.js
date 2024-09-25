@@ -102,3 +102,17 @@ slideshows.forEach((slideshow) => {
 
   setInterval(changeImage, 3000);
 });
+
+// Navbar blur and transparency on scroll
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById('navbar');
+  if (window.scrollY > 50) {
+    navbar.classList.add('backdrop-blur-md', 'bg-opacity-20');
+    navbar.classList.remove('bg-opacity-100');
+  } else {
+    navbar.classList.remove('backdrop-blur-md', 'bg-opacity-70');
+    navbar.classList.add('bg-opacity-100');
+  }
+});
+
+
