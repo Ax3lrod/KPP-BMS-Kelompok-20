@@ -84,7 +84,7 @@ const slideshows = [
       "images/amoes_figma.jpg",
       "images/amoes_webdev.png",
       "images/amoes_copywriting.png",
-      "images/member2_task4.png",
+      "images/amoes_photography.jpeg",
     ],
   },
 ];
